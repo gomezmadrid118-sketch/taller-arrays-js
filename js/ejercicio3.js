@@ -14,7 +14,7 @@ formulario.addEventListener('submit', function(event){
     let nombreP = inputNombre.value;
     let precioP = parseFloat(inputPrecio.value);
     let cantidadP = parseInt(inputCantidad.value);
-    if(nombreP === ''){
+    if(nombreP.trim() === ''){
         inputNombre.style.backgroundColor = 'red';
         alert('Ingrese por favor un nombre válido');
     } else if(isNaN(precioP) || precioP <= 0){
