@@ -29,7 +29,7 @@ function mostrarResultados(){
     let numMenor = listaNumeros[0];
 
     for (let i = 0; i < listaNumeros.length; i++) {
-        lista.innerHTML = `<li>${listaNumeros[i]}</li>`
+        lista.innerHTML += `<li>${listaNumeros[i]}</li>`
         total += listaNumeros[i];
 
         if (listaNumeros[i] < numMenor) {
